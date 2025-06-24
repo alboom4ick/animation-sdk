@@ -30,10 +30,10 @@ export default function Page() {
       document.getElementById('starting-color')! as HTMLInputElement
     ).value;
     await sidePanelClient.startActivity({
-      mainStageUrl: MAIN_STAGE_URL,
-      sidePanelUrl: ACTIVITY_SIDE_PANEL_URL,
+      mainStageUrl: 'https://master.dcg0q7e4vc8qz.amplifyapp.com/mainstage',
+      sidePanelUrl: 'https://master.dcg0q7e4vc8qz.amplifyapp.com/activitysidepanel',
       // Pass the selected color to customize the initial display.
-      additionalData: `{\"startingColor\": \"${startingColor}\"}`,
+      additionalData: JSON.stringify({startingColor}),
     });
     window.location.replace(ACTIVITY_SIDE_PANEL_URL + window.location.search);
   
@@ -45,7 +45,7 @@ export default function Page() {
      */
     async function initializeSidePanelClient() {
       const session = await meet.addon.createAddonSession({
-        cloudProjectNumber: CLOUD_PROJECT_NUMBER,
+        cloudProjectNumber: '109731201886',
       });
       const client = await session.createSidePanelClient();
       setSidePanelClient(client);
