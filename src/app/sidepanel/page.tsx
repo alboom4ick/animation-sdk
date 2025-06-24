@@ -36,7 +36,7 @@ export default function Page() {
       additionalData: `{\"startingColor\": \"${startingColor}\"}`,
     });
     window.location.replace(ACTIVITY_SIDE_PANEL_URL + window.location.search);
-  }
+  
 
   useEffect(() => {
     /**
@@ -78,4 +78,5 @@ export default function Page() {
       </button>
     </>
   );
+}
 }
