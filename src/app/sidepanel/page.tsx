@@ -33,7 +33,7 @@ export default function Page() {
       // Pass the selected color to customize the initial display.
       additionalData: JSON.stringify({startingColor}),
     });
-    window.location.replace(ACTIVITY_SIDE_PANEL_URL + window.location.search);
+    // window.location.replace(ACTIVITY_SIDE_PANEL_URL + window.location.search);
   
 
   useEffect(() => {
