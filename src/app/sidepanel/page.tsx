@@ -11,9 +11,7 @@ import {
   MAIN_STAGE_URL,
 } from '../../shared/constants';
 
-/**
- * @see {@link https://developers.google.com/meet/add-ons/guides/overview#side-panel}
- */
+
 export default function Page() {
   const [sidePanelClient, setSidePanelClient] = useState<MeetSidePanelClient>();
 
@@ -31,7 +29,7 @@ export default function Page() {
     ).value;
     await sidePanelClient.startActivity({
       mainStageUrl: 'https://master.dcg0q7e4vc8qz.amplifyapp.com/mainstage',
-      sidePanelUrl: 'https://master.dcg0q7e4vc8qz.amplifyapp.com/activitysidepanel',
+        // sidePanelUrl: 'https://master.dcg0q7e4vc8qz.amplifyapp.com/activitysidepanel',
       // Pass the selected color to customize the initial display.
       additionalData: JSON.stringify({startingColor}),
     });
