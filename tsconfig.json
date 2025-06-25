@@ -29,14 +29,15 @@
     "target": "ES2017"
   },
   "include": [
-    "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
+    "../dist/animation-next-js/types/**/*.ts",
+    "../dist/game-next-js/types/**/*.ts",
     ".next/types/**/*.ts",
     "build/types/**/*.ts",
-    "../dist/game-next-js/types/**/*.ts",
     "firebasedist/types/**/*.ts",
-    "../dist/animation-next-js/types/**/*.ts"
+    "next-env.d.ts",
+    "/dist/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"
