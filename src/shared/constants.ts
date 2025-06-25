@@ -21,7 +21,7 @@ export const CLOUD_PROJECT_NUMBER = '109731201886';
 
 export const SITE_BASE = inDebugMode()
   ? 'https://localhost:3000/meet/animation-next-js'
-  : 'https://master.dcg0q7e4vc8qz.amplifyapp.com';
+  : 'https://animation-sdk-alboom4icks-projects.vercel.app';
 
 function inDebugMode() {
   return process.env.NEXT_PUBLIC_DEBUG === '1';
