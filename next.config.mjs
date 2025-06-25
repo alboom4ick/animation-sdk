@@ -8,6 +8,10 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  // Add asset prefix to match basePath
+  assetPrefix: '/meet/animation-next-js',
+  // Ensure trailing slashes are handled consistently
+  trailingSlash: true,
 };
 
 export default nextConfig;
