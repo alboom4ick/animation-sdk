@@ -139,6 +139,8 @@ export default function PrettyColors({ baseColor }: Props) {
   // Draw 1000 lines (10^3).
   const coloredLines = createLines(hslColor, 10, isAnimated);
 
+  console.log('Animation state:', { isAnimated, baseColor, linesCount: coloredLines.length });
+
   return (
     <>
       <button
