@@ -149,8 +149,8 @@ export default function PrettyColors({ baseColor }: Props) {
       >
         {isAnimated ? 'Stop' : 'Start'} animation
       </button>
-      <h1>The base color is {baseColor}</h1>
-      <h3>Can you see me?</h3>
+      <h1 style={{ color: baseColor }}>The base color is {baseColor}</h1>
+      <h3 color='white'>Can you see me?</h3>
       <div className="prettyColorsContainer">{coloredLines}</div>
     </>
   );
